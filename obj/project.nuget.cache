@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "1x5jdFwz+iY=",
+  "success": true,
+  "projectFilePath": "G:\\User_Files\\Dev\\mochineko\\YMM4_Test_Plugin\\YMM4_Test_Plugin.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.windows.sdk.net.ref\\10.0.19041.57\\microsoft.windows.sdk.net.ref.10.0.19041.57.nupkg.sha512"
+  ],
+  "logs": []
+}
