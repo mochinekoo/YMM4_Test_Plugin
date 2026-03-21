@@ -6,4 +6,9 @@
   <PropertyGroup>
     <ActiveDebugProfile>プロファイル 1</ActiveDebugProfile>
   </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="TestWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
 </Project>

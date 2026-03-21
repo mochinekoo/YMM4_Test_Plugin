@@ -85,3 +85,9 @@ G:\User_Files\Dev\mochineko\YMM4_Test_Plugin\obj\Debug\net10.0-windows10.0.19041
 G:\User_Files\Dev\mochineko\YMM4_Test_Plugin\obj\Debug\net10.0-windows10.0.19041.0\refint\YMM4_Test_Plugin.dll
 G:\User_Files\Dev\mochineko\YMM4_Test_Plugin\obj\Debug\net10.0-windows10.0.19041.0\YMM4_Test_Plugin.pdb
 G:\User_Files\Dev\mochineko\YMM4_Test_Plugin\obj\Debug\net10.0-windows10.0.19041.0\ref\YMM4_Test_Plugin.dll
+G:\User_Files\Dev\mochineko\YMM4_Test_Plugin\obj\Debug\net10.0-windows10.0.19041.0\YMM4_Test_Plugin.sourcelink.json
+G:\User_Files\Dev\mochineko\YMM4_Test_Plugin\obj\Debug\net10.0-windows10.0.19041.0\TestWindow.g.cs
+G:\User_Files\Dev\mochineko\YMM4_Test_Plugin\obj\Debug\net10.0-windows10.0.19041.0\YMM4_Test_Plugin_MarkupCompile.cache
+G:\User_Files\Dev\mochineko\YMM4_Test_Plugin\obj\Debug\net10.0-windows10.0.19041.0\YMM4_Test_Plugin_MarkupCompile.lref
+G:\User_Files\Dev\mochineko\YMM4_Test_Plugin\obj\Debug\net10.0-windows10.0.19041.0\TestWindow.baml
+G:\User_Files\Dev\mochineko\YMM4_Test_Plugin\obj\Debug\net10.0-windows10.0.19041.0\YMM4_Test_Plugin.g.resources
