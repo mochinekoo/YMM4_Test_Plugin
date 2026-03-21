@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
+using YukkuriMovieMaker.Commons;
 using YukkuriMovieMaker.Plugin;
 
 namespace YMM4_Test_Plugin {
@@ -14,6 +15,7 @@ namespace YMM4_Test_Plugin {
 
         public Main() {
             MessageBox.Show("あああ", "タイトル", MessageBoxButton.OKCancel, MessageBoxImage.Question);
+            
         }
     }
 }

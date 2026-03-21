@@ -3,10 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:YMM4_Test_Plugin"
+             xmlns:local="clr-namespace:YMM4_Test_Plugin" d:DataContext="{d:DesignInstance Type=local:TestViewModel}"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="450" d:DesignWidth="800"
+             d:Background="White">
     <Grid>
-            <TextBlock Text="あああ"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Column="0" Grid.Row="0" Text="テストプラグインです。" FontSize="15" Margin="10,10,0,0"/>
+        <Button Grid.Column="0" Grid.Row="1" Content="クリック" Command="{Binding ButtonCommand.TestCommand}" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,10,0,0"/>
     </Grid>
 </UserControl>
