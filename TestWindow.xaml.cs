@@ -11,6 +11,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using YukkuriMovieMaker.Commons;
+using YukkuriMovieMaker.Settings;
 
 namespace YMM4_Test_Plugin
 {
@@ -22,6 +23,13 @@ namespace YMM4_Test_Plugin
         public TestWindow()
         {
             InitializeComponent();
+
+            foreach(var item in ItemSettings.Default.SortedTemplates) {
+                Button button = new Button();
+                button.Content = item.Name + "\n" + item.GetType();
+                TemplateWrap.Children.Add(button);
+            }
+            
         }
 
         public event EventHandler? BeginEdit;
