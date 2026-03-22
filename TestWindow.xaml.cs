@@ -10,17 +10,28 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using YukkuriMovieMaker.Commons;
 
 namespace YMM4_Test_Plugin
 {
     /// <summary>
     /// TestWindow.xaml の相互作用ロジック
     /// </summary>
-    public partial class TestWindow : UserControl
+    public partial class TestWindow : UserControl, IPropertyEditorControl
     {
         public TestWindow()
         {
             InitializeComponent();
+        }
+
+        public event EventHandler? BeginEdit;
+        public event EventHandler? EndEdit;
+
+        public IEditorInfo Editor;
+
+        public void SetEditorInfo(IEditorInfo info)
+        {
+            Editor = info;
         }
     }
 }

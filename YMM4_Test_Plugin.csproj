@@ -14,11 +14,8 @@
     <ExcludeFromPublish Include="**\*.xml" />
     <ExcludeFromPublish Include="**\*.log" />
     <!-- YMM4 plugins -->
-    <Reference Include="$(YMM4_PATH)\YukkuriMovieMaker.Plugin.dll">
-      <Private>false</Private>
-      <CopyLocal>false</CopyLocal>
-    </Reference>
-    <Reference Include="$(YMM4_PATH)\YukkuriMovieMaker.Controls.dll">
+    <YMM4Dlls Include="$(YMM4_PATH)\YukkuriMovieMaker*.dll" />
+    <Reference Include="@(YMM4Dlls)">
       <Private>false</Private>
       <CopyLocal>false</CopyLocal>
     </Reference>
