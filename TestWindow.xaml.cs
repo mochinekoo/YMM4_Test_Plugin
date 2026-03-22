@@ -23,10 +23,13 @@ namespace YMM4_Test_Plugin
         public TestWindow()
         {
             InitializeComponent();
+            DataContext = new TestViewModel();
 
             foreach(var item in ItemSettings.Default.SortedTemplates) {
                 Button button = new Button();
                 button.Content = item.Name + "\n" + item.GetType();
+                button.Command = ((TestViewModel)DataContext).ButtonCommand.TemplateButtonCommand;
+                button.CommandParameter = item.Items.ToArray();
                 TemplateWrap.Children.Add(button);
             }
             

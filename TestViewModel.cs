@@ -33,6 +33,7 @@ namespace YMM4_Test_Plugin
         public void SetTimelineToolInfo(TimelineToolInfo info)
         {
             toolInfo_ = info;
+            Util.GetInstacne().SetTimelineToolInfo(info);
         }
 
         public TimelineToolInfo GetTimelineToolInfo()

@@ -6,9 +6,15 @@ using System.Windows.Input;
 namespace YMM4_Test_Plugin
 {
     internal class BaseCommand : ICommand{
-        private readonly Action action;
+        private readonly Action<object>? action = null;
+        private readonly Action? actionNoParam = null;
 
         public BaseCommand(Action action)
+        {
+            actionNoParam = action;
+        }
+
+        public BaseCommand(Action<object?> action)
         {
             this.action = action;
         }
@@ -22,7 +28,17 @@ namespace YMM4_Test_Plugin
 
         public void Execute(object? parameter)
         {
-            action();
+            if (action != null)
+            {
+                if (parameter is object value)
+                {
+                    action(value);
+                }
+            }
+            else if (actionNoParam != null)
+            {
+                actionNoParam();
+            }
         }
     }
 }
